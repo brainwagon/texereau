@@ -1052,10 +1052,10 @@ FmtMatrix (int nzones, int nsamp, struct MirrorData *S, struct Matrix *M,
     for (i = 0; i < nzones; i++)
 	fprintf (fpt, "%11.4f", M->D123[i]);
     if (S->cnst <= 0.)
-	fprintf (fpt, "\n 9 D123 + %7.4f", (double) fabs (S->cnst));
+	fprintf (fpt, "\n 9 D123 + %6.4f", (double) fabs (S->cnst));
 
     else
-	fprintf (fpt, "\n 9 D123 - %7.4f", (double) S->cnst);
+	fprintf (fpt, "\n 9 D123 - %6.4f", (double) S->cnst);
     for (i = 0; i < nzones; i++)
 	fprintf (fpt, "%11.4f", M->D123[i] - S->cnst);
     fprintf (fpt, "\n10 %-13s", "Lamda c");
