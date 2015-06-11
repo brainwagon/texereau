@@ -1017,7 +1017,7 @@ FmtMatrix (int nzones, int nsamp, struct MirrorData *S, struct Matrix *M,
     int i;
 
     fprintf (fpt, "\n\tTEXEREAU MIRROR TEST SHEET\n\n");
-    fprintf (fpt, "           Comments: %s", S->comments);
+    fprintf (fpt, "           Comments: %s\n", S->comments);
     fprintf (fpt, "   Optical diameter: %g\n", (double) S->dia);
     fprintf (fpt, "  Readings per zone: %d\n", nsamp);
     fprintf (fpt, "Radius of curvature: %g\n", (double) S->roc);
